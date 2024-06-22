@@ -14,7 +14,7 @@ return new class extends Migration
     Schema::create('idees', function (Blueprint $table) {
         $table->id();
         $table->string('auteur');
-        $table->string('email')->nullable()->unique();
+        $table->string('email')->unique();
         $table->string('titre');
         $table->text('description');
         $table->timestamps();

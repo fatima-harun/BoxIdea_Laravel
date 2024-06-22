@@ -20,6 +20,21 @@ class IdeeController extends Controller
       
       Idee::create($request->all()) ;
 
-      return view('acceuil');
+      return redirect('/');
     }
+
+    public function lister(){
+
+        $idees = Idee::all();
+
+        return view('idees.liste',compact('idees'));
+    }
+
+    public function detailsIdee($id)
+{
+    $idee = Idee::findOrFail($id);
+    
+    return view('idees.detail', compact('idee'));
+}
+
 }

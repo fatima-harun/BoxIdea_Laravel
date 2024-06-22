@@ -13,6 +13,7 @@ class Idee extends Model
     'auteur',
     'titre',
     'description',
+    'email',
     'categorie_id'
 ];
 

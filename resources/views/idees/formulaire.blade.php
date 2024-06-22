@@ -11,8 +11,8 @@
         <nav>
             <div><img src="{{asset('images\logo.png')}}" alt="" class="logo"></div>
             <div class="list">
-             <li><a href="">Acceuil</a></li>
-             <li><a href="">Liste des idées</a></li>
+             <li><a href="/">Acceuil</a></li>
+             <li><a href="/lister">Liste des idées</a></li>
               <li><a href="">Contact</a></li>
            </div>
           <div class="btn">
