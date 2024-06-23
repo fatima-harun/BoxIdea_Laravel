@@ -16,6 +16,7 @@ return new class extends Migration
         $table->string('auteur');
         $table->string('email')->unique();
         $table->string('titre');
+        $table->string('etat');
         $table->text('description');
         $table->timestamps();
     });

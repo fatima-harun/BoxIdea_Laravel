@@ -14,6 +14,7 @@ class Idee extends Model
     'titre',
     'description',
     'email',
+    'etat',
     'categorie_id'
 ];
 

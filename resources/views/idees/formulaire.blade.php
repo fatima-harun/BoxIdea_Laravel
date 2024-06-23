@@ -16,7 +16,7 @@
               <li><a href="">Contact</a></li>
            </div>
           <div class="btn">
-             <a href=""><button>Se connecter</button></a> 
+             <a href="/login"><button>Se connecter</button></a> 
            </div>
         </nav>
    </header>
