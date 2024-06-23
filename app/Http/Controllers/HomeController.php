@@ -3,10 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Idee;
 
 class HomeController extends Controller
 {
     public function index(){
-      return view('personnels.home');
+
+      $idees = Idee::all();
+
+      return view('personnels.home', compact('idees'));
     }
 }

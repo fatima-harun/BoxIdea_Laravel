@@ -36,3 +36,11 @@ Route::post('/login',[UserController::class,'loginPost'])->name('login');
 
 //route pour se deconnecter
 Route::delete('/logout',[UserController::class,'logout'])->name('logout');
+
+// route pour traiter l'action sur les idées
+Route::post('/idee/{id}/{action}', [IdeeController::class, 'ideeAction'])->name('idee.action');
+
+// route pour mettre à jour l'action d'approuver ou non
+Route::post('idee/updateStatus/{id}/{action}', [IdeeController::class, 'updateStatus'])->name('candidatures.updateStatus');
+Route::post('/idee/{id}/approuvee', [IdeeController::class, 'updateStatus'])->name('idee.approuvee');
+Route::post('/idee/{id}/nonapprouvee', [IdeeController::class, 'updateStatus'])->name('idee.nonapprouvee');
