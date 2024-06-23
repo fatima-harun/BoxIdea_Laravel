@@ -22,4 +22,9 @@ class Idee extends Model
 
         return $this->belongsTo(Categorie::class);
     }
+
+    public function commentaires(){
+
+        return $this->hasMany(Commentaire::class);
+    }
 }
