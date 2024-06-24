@@ -32,7 +32,10 @@ Route::get('/login',[UserController::class,'login'])->name('login');
 Route::post('/login',[UserController::class,'loginPost'])->name('login');
 
 
- Route::get('/home',[HomeController::class,'index']); 
+Route::middleware(['auth'])->group(function () {
+    Route::get('/home', [HomeController::class, 'index']);
+});
+
 
 //route pour se deconnecter
 Route::delete('/logout',[UserController::class,'logout'])->name('logout');
