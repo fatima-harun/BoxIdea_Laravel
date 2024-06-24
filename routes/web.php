@@ -41,6 +41,6 @@ Route::delete('/logout',[UserController::class,'logout'])->name('logout');
 Route::post('/idee/{id}/{action}', [IdeeController::class, 'ideeAction'])->name('idee.action');
 
 // route pour mettre à jour l'action d'approuver ou non
-Route::post('idee/updateStatus/{id}/{action}', [IdeeController::class, 'updateStatus'])->name('candidatures.updateStatus');
+Route::post('idee/updateStatus/{id}/{action}', [IdeeController::class, 'updateStatus']);
 Route::post('/idee/{id}/approuvee', [IdeeController::class, 'updateStatus'])->name('idee.approuvee');
 Route::post('/idee/{id}/nonapprouvee', [IdeeController::class, 'updateStatus'])->name('idee.nonapprouvee');

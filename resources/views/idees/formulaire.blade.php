@@ -34,16 +34,18 @@
         <div><input type="email" name="email"></div>
         <div><label for="">Titre de l'idée</label></div>
         <div><input type="text" name="titre"></div>
+        <div><Label>Catégorie</Label></div>
         <select name="categorie_id" id="">
             <option value="" disabled selected>Choisir une catégorie</option>
             @foreach($categories as $categorie)
             <option value="{{$categorie->id}}">{{$categorie->nom}}</option>
             @endforeach
         </select>
-        <div><label for="">Description</label></div>
-        <div><textarea id="description" name="description"></textarea></div>
+        <div><label for="description">Description</label></div>
+<div><textarea id="description" name="description" rows="10" cols="50"></textarea></div>
 
-        <button>Proposer mon idée</button>
+
+        <button class="btn-propose">Proposer mon idée</button>
        </form>
      </div>
     </div>
@@ -65,7 +67,7 @@
     }
     .list a{
         text-decoration:none;
-        color:#2D4733;
+        color:#1e3799;
     }
     header{
         margin-top:3vh
@@ -80,11 +82,11 @@
     .btn button{
         font-size:2vh;
         border-radius:3vh;
-        background-color:#2D4733;
+        background-color:#fa983a;
         color:#f5f6fa;
-        padding:1vh
-        border-width:thin;
+        padding:1vh;
         font-weight:400;
+        border:none
     }
     .container2{
         display:flex;
@@ -103,12 +105,33 @@
     p{
         /* text-align:center; */
         font-size:3vh;
-        background-color:#2D4733;
+        background-color:#1e3799;
         color:white;
         padding:2vh;
         width: 35vh;
         margin-left:80vh
     }
+    .btn-propose{
+        font-size:2vh;
+        border-radius:3vh;
+        background-color:#fa983a;
+        color:#f5f6fa;
+        padding:1vh;
+        font-weight:400;
+        border:none
+    }
+    form label {
+    font-size: 2vh;
+    margin-bottom: 1vh;
+}
+
+form input {
+    width: 50vh;
+    padding: 2vh;
+    font-size: 2vh;
+    border: 1px solid #ccc;
+    border-radius: 2vh;
+}
     </style>
 </body>
 </html>

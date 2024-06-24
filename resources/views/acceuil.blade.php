@@ -58,7 +58,7 @@
     }
     .list a{
         text-decoration:none;
-        color:#2D4733;
+        color:#1e3799;
     }
     header{
         margin-top:3vh
@@ -73,11 +73,11 @@
     .btn button{
         font-size:2vh;
         border-radius:3vh;
-        background-color:#2D4733;
+        background-color:#fa983a;
         color:#f5f6fa;
-        padding:1vh
-        border-width:thin;
+        padding:1vh;
         font-weight:400;
+        border:none
     }
     p{
         font-size:2.3vh;
@@ -92,12 +92,16 @@
     .btn2{
         font-size:2vh;
         border-radius:4vh;
-        background-color:#2D4733;
+        background-color:#fa983a;
         color:#f5f6fa;
-        border-width:thin;
+        border:none;
         font-weight:400;
-        padding:1vh
+        padding:1vh;
     }
+    h1{
+        color:#1e3799
+    }
+
    </style>
 </body>
 </html>
